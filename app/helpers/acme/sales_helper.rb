@@ -1,0 +1,2 @@
+module Acme::SalesHelper
+end

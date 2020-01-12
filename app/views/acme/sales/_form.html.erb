@@ -1,0 +1,17 @@
+<%= form_with(model: acme_sale, local: true) do |form| %>
+  <% if acme_sale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(acme_sale.errors.count, "error") %> prohibited this acme_sale from being saved:</h2>
+
+      <ul>
+      <% acme_sale.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
