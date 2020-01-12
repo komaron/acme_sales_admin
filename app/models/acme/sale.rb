@@ -1,2 +1,4 @@
-class Acme::Sale < ApplicationRecord
+module Acme
+  class Sale < ApplicationRecord
+  end
 end

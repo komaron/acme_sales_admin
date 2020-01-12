@@ -1,2 +1,4 @@
-module Acme::SalesHelper
+module Acme
+  module SalesHelper
+  end
 end
