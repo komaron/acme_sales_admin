@@ -6,3 +6,5 @@ Sales Admin
 ## Getting Started
 Install dependent gems.
 `bundle install`
+`rails db:setup`
+`rails db:migrate`
