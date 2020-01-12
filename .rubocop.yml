@@ -1,0 +1,17 @@
+AllCops:
+  Exclude:
+    - Capfile
+    - Gemfile
+    - Rakefile
+    - bin/**/*
+    - tmp/**/*
+
+  Include:
+    - app/**/*.rb
+    - lib/**/*.rb
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
