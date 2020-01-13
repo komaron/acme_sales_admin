@@ -21,6 +21,8 @@ module Acme
       end
     end
 
+    private
+
     def default_data_file
       Rails.root.join('salesdata.csv')
     end
