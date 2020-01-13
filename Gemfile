@@ -13,6 +13,7 @@ gem 'jbuilder',         '~> 2.5'
 gem 'money-rails'
 gem 'bson_ext'
 gem 'rack-attack',      '~> 5.0.1'
+gem 'devise',           '~> 4.7.1'
 
 group :development, :test do
   gem 'brakeman'
