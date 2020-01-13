@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_01_13_001630) do
   create_table "acme_sales", force: :cascade do |t|
     t.string "customer_name"
     t.string "item_description"
-    t.decimal "item_price", precision: 8, scale: 2, default: "0.0"
+    t.string "item_price"
     t.integer "quantity", default: 0
     t.string "merchant_name"
     t.string "merchant_address"
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 2020_01_13_001630) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
+    t.string "first_name"
+    t.string "last_name"
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"

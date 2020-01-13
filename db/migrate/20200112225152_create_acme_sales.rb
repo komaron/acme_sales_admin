@@ -3,7 +3,7 @@ class CreateAcmeSales < ActiveRecord::Migration[5.2]
     create_table :acme_sales do |t|
       t.string        :customer_name
       t.string        :item_description
-      t.decimal       :item_price, default: 0, :precision => 8, :scale => 2
+      t.string       :item_price
       t.integer       :quantity, default: 0
       t.string        :merchant_name
       t.string        :merchant_address
