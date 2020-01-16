@@ -14,12 +14,15 @@ gem 'money-rails'
 gem 'bson_ext'
 gem 'rack-attack',      '~> 5.0.1'
 gem 'devise',           '~> 4.7.1'
+gem 'bulma-rails',      '~> 0.8'
 
 group :development, :test do
   gem 'brakeman'
   gem 'bundle-audit'
   gem 'pry-rails'
   gem 'rubocop'
+  gem 'minitest'
+  gem 'minitest-reporters'
 end
 
 group :development do
