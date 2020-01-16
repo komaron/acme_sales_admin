@@ -16,22 +16,22 @@ Your company just acquired Acme Cult Hero Supplies. They have been using a CSV w
 - Bulma
 
 ## Getting Started
-Install dependent gems.
+### Install dependent gems.
 `bundle install`
 
-Set up the database
+### Set up the database
 `rails db:setup`
 
-Migrations
+### Migrations
 `rails db:migrate`
 
-Launch a console
+### Launch a console
 `bundle exec rails console`
 
-Launch a rails server
+### Launch a rails server
 `bundle exec rails server`
 
-Run tests
+### Run tests
 `bundle exec rails test`
 
 P.S. Yes I know the front end looks terrible :)
