@@ -19,7 +19,7 @@ module Acme
       report = CsvParser.new(params).import!
 
       if report.success?
-        flash[:success] = 'Upload successful'
+        flash[:success] = 'Import successful'
       else
         flash[:error] = 'There was a problem processing your file, pleast try again'
       end
@@ -29,12 +29,10 @@ module Acme
 
     private
 
-    # Use callbacks to share common setup or constraints between actions.
     def set_report
       @report = Acme::SaleReport.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def report_params
       params.fetch(:report, {})
     end
