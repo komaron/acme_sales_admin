@@ -22,9 +22,9 @@ module Acme
           merchant_address: row['Merchant Address'],
           sale_report_id: report.id
         )
-
-        return report
       end
+
+      report
     end
 
     private
